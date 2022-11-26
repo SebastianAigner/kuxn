@@ -6,8 +6,11 @@ Experiments with emulating the [Uxn personal computing environment](https://100r
 
 ### Dev plan
 
-- How does the stack work?
-- Implement minimal set of instructions (`LIT`, `ADD`, `DEO`)
+- [x] How does the stack work?: The stack is separate from the main memory of the Uxn machine, and is 256 bytes in size, can't be addressed randomly, is fully managed by the CPU.
+- [x] Implement minimal set of instructions (`LIT`, `ADD`, `DEO`, `BRK`)
+- [x] Successfully run a first simple program / ROM
+
+
 - Build immutable version of the `UxnMachine` using [kx.collections.immutable](https://github.com/Kotlin/kotlinx.collections.immutable)
 
 ### Important resources
